@@ -1,1 +1,28 @@
 /* Empezamos con el Estilo*/
+::before,
+::after {
+    --color1: #8ba6ac;
+    --color2: #d7d7b8;
+    --color3: #e5e6c9;
+    --color4: #f8f8ec;
+    --color5: #bdcdd0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h2 {
+    color: #d7d7b8
+}
+
+.todo {
+    font-size: 16px;
+    color: #f8f8ec;
+    background: #8ba6ac;
+}
+
+.menu {
+    color: #bdccd0;
+}
+
