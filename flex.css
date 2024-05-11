@@ -1,0 +1,31 @@
+/*Esta es la hoja de estilo flex*/
+.menu nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.sobre_mi {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    margin: auto;    
+}
+
+.sobre_mi > * {
+    margin-bottom: 5px;
+}
+
+.sobre_mi:nth-child(2),
+.sobre_mi:nth-child(3) {
+    display: flex;
+    flex-direction: row;
+}

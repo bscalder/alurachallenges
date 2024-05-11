@@ -17,7 +17,7 @@ h2 {
 }
 
 .todo {
-    font-size: 16px;
+    font-size: 25px;
     color: #f8f8ec;
     background: #8ba6ac;
 }
@@ -26,3 +26,33 @@ h2 {
     color: #bdccd0;
 }
 
+.menu nav {
+    position: fixed;
+    top: 0;
+    background-color: #8ba6ac;
+    color: #d7d7b8;
+    width: 100%;
+    z-index: 999;
+    margin-bottom: 0px;
+}
+
+.menu nav ul li {
+    margin-right: 25px;
+}
+
+.menu nav ul li:hover {
+    font-size: 35px;
+    color: #e5e6c9;
+}
+
+.menu nav ul li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.fotobenji {
+    background-image: url("imgs/Yosoybenji1.png");
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+}
