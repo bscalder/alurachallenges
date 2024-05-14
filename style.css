@@ -49,10 +49,3 @@ h2 {
     text-decoration: none;
     color: inherit;
 }
-
-.fotobenji {
-    background-image: url("imgs/Yosoybenji1.png");
-    width: 200px;
-    height: 200px;
-    background-size: cover;
-}
