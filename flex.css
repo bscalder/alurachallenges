@@ -26,9 +26,46 @@
 
 .sobre_mi_contenido {
     display: flex;
-    flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     gap: 20px;
+}
+
+.pasatiempos,
+.habilidades,
+.formaciones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+
+.pasatiempos ul,
+.habilidades ul,
+.formaciones ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.pasatiempos li,
+.habilidades li,
+.formaciones li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: inherit;
+    padding: 10px;
+    margin-bottom:  10px;
+    width: 20%;
+}
+
+.pasatiempos li:hover,
+.habilidades li:hover,
+.formaciones li:hover {
+    transform: scale(1.3);
+    z-index: 2;
+    transition: 0.5s;
 }
