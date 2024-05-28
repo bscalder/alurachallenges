@@ -34,9 +34,19 @@ h2 {
 .menu nav ul li:hover {
     font-size: 35px;
     color: #e5e6c9;
+    transition: 0.5s;
 }
 
 .menu nav ul li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.enlaces ul li::after {
+    content: "↗";
+}
+
+.enlaces ul li a {
     text-decoration: none;
     color: inherit;
 }
@@ -51,8 +61,9 @@ h2 {
 
 .pasatiempos li:hover,
 .habilidades li:hover,
-.formaciones li:hover {
-    transform: scale(1.3);
+.formaciones li:hover,
+.enlaces ul li:hover {
+    transform: scale(1.4);
     z-index: 2;
     transition: 0.5s;
 }
