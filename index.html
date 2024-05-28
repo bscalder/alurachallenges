@@ -64,13 +64,22 @@
     </section>
     <section class="contacto">
         <a name="contacto"><h2>Contacto</h2></a>
-        <p>Formulario</p>
+        <section class="contacto1">
+            <img src="imgs/contact-1166590_1280.png" width="60%" height="60%">
+            <form method="post" onsubmit="validarFormulario(event)">
+                <input type="text" class="formnombre" name="formnombre" placeholder="Nombre">
+                <input type="text" class="formemail" name="formemail" placeholder="E-mail">
+                <input type="text" class="formasunto" name="formasunto" placeholder="Asunto">
+                <textarea class="formmensaje" name="formmensaje" placeholder="Mensaje"></textarea>
+                <input type="submit" class="formenvia">
+            </form>
+        </section>
     </section>
-<!--    <section class="pie_pagina">
-        <h2>Pie de pagina</h2>
-        <p>No se que poner</p>
-    </section> -->
+   <section class="pie_pagina">
+        <h2>Una produccion de Benjamin Santiago<br>2024</h2>
+    </section>
     </div>
+    <script src="validacion.js"></script>
 </body>
 
 </html>

@@ -3,11 +3,12 @@
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex;
+    display: none;
     justify-content: flex-end;
 }
 
-.titulo {
+.titulo,
+.pie_pagina {
     display: flex;
     justify-content: center;
     width: 100%;
@@ -32,9 +33,19 @@
     gap: 20px;
 }
 
+.sobre_mi_contenido {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+}
+
 .pasatiempos,
 .habilidades,
-.formaciones {
+.formaciones,
+.contacto {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -51,8 +62,10 @@
 }
 
 .pasatiempos li,
-.habilidades li {
+.habilidades li,
+.formaciones li {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: inherit;
@@ -62,11 +75,57 @@
 }
 
 .formaciones li {
+    width: 30%;
+}
+
+.contacto {
+    width: 90%;
+}
+
+.contacto1 {
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: inherit;
     padding: 10px;
-    margin-bottom:  10px;
-    width: 30%;
+    margin-bottom: 10px;
+    width: 40%
+}
+
+@media (min-width: 425px) {
+
+    .pasatiempos li,
+    .habilidades li,
+    .formaciones li {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        background-color: inherit;
+        padding: 10px;
+        margin-bottom:  10px;
+        width: 20%;
+    }
+
+    .formaciones li {
+        width: 30%;
+    }
+
+}
+
+@media (min-width: 768px) {
+
+    .menu nav ul {
+        display: flex;
+    }
+
+    .sobre_mi_contenido {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        gap: 20px;
+    }
+
 }
